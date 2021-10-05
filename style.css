@@ -1,25 +1,26 @@
-card {
+.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+    margin-top: 30;
+    display: grid;
     text-align: center;
     font-family: arial;
   }
   
+
+
+  
   .price {
+    position:absolute;
+    right: 10px;
     color: grey;
     font-size: 22px;
   }
   
 
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  
   .card button {
+    position:unset;
+    left: 30;
+    top: 150;
     border: none;
     outline: 0;
     padding: 12px;
@@ -27,10 +28,34 @@ card {
     background-color: #000;
     text-align: center;
     cursor: pointer;
-    width: 20%;
+    width: 100%;
     font-size: 18px;
   }
   
   .card button:hover {
     opacity: 0.7;
   }
+
+  ul.nav {
+    margin:0;
+    padding:0;
+    list-style:none;
+    height:36px; line-height:36px;
+    background:#0d7963; /* you can change the backgorund color here. */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+ul.nav li {
+    border-right:1px solid #189b80; /* you can change the border color matching to your background color */
+    float:left;
+}
+ul.nav a {
+    display:block;
+    padding:0 28px;
+    color:#ccece6;
+    text-decoration:none;
+}
+ul.nav a:hover,
+ul.nav li.current a {
+    background:#086754;
+}
